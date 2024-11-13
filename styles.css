@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ensures form does not grow too large */
+    box-sizing: border-box; /* Prevents padding from increasing width */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Makes inputs full-width */
+    box-sizing: border-box; /* Prevents padding from increasing input size */
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full-width button */
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 10px; /* Adds padding on smaller screens */
+    }
+  
+    .form-container {
+      padding: 20px;
+      max-width: 90%; /* Ensures form width adjusts on smaller screens */
+    }
+  
+    h2 {
+      font-size: 24px; /* Smaller heading on mobile */
+    }
+  
+    input, button {
+      padding: 10px; /* Slightly smaller padding on mobile */
+    }
+  
+    button {
+      font-size: 16px; /* Adjust button font size */
+    }
+  
+    p {
+      font-size: 12px; /* Adjust text size */
+    }
+  }
+  
+  /* Mobile-First Approach for Small Devices */
+  @media screen and (max-width: 480px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 22px; /* Even smaller heading on very small screens */
+    }
+  
+    input, button {
+      padding: 8px; /* Adjust padding further for very small screens */
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    p {
+      font-size: 12px;
+}
+}
